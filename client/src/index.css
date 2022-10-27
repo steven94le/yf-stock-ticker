@@ -20,4 +20,37 @@ body {
   height: 100%;
   background: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.stock {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  animation: scroll 10s infinite linear;
+}
+
+@keyframes scroll {
+  from {
+    left: 70%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.up {
+  color: green;
+}
+
+.down {
+  color: red;
 }

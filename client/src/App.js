@@ -73,9 +73,9 @@ const App = () => {
     <div>
       <h2>Add "/?symbol=TICKER" to end of url for ticker price</h2>
       <br />
-      <div>
+      <div className="stock">
         {stock && (
-          <h2>
+          <h2 className={direction}>
             {stock.id}: {formatPrice(stock.price)} {emojis[direction]}
           </h2>
         )}
